@@ -22,27 +22,27 @@
             tendn = document.getElementById("txtus").value;
             mk = document.getElementById("txtmk").value;
             //checkbox luu gia tri vao mang array
-            var cafe = new Array();
-            var taphop = document.querySelectorAll("input[type='checkbox']");
-            taphop.forEach(function(chk) {
+            var cafe =new Array();
+            var taphop =document.querySelectorAll("input[type='checkbox']");
+            taphop.forEach(function(chk){
                 if (chk.checked) {
                     cafe.push(chk.value);
                 }
             });
             //radio luu 1 gia tri
             var gtinh;
-            var taphopgt = document.querySelectorAll("input[type='radio']");
-            taphopgt.forEach(function(ra) {
+            var taphopgt =document.querySelectorAll("input[type='radio']");
+            taphopgt.forEach(function(ra){
                 if (ra.checked) {
-                    gtinh = ra.value;
+                    gtinh= ra.value;
                 }
             });
-            var w = window.open("info.html")
-                //luu du lieu ghi vao
-            localStorage.setItem("us", tendn);
-            localStorage.setItem("mk", mk);
-            localStorage.setItem("cf", cafe);
-            localStorage.setItem("gt", gtinh);
+            var w=window.open("info.html")
+            //luu du lieu ghi vao
+            localStorage.setItem("us",tendn);
+            localStorage.setItem("mk",mk);
+            localStorage.setItem("cf",cafe);
+            localStorage.setItem("gt",gtinh);
         }
     </script>
 </head>
