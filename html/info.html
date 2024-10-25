@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>info</title>
+    <style>
+        table {
+            width: 200px;
+            border: solid black 1px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>info</h2>
+    <table>
+        <tr>
+            <th colspan="2">THONG TIN DANG NHAP</th>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td id="us">AAAA</td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td id="pw">bbbb</td>
+        </tr>
+        <tr>
+            <td>GioiTinh</td>
+            <td id="gen">dddd</td>
+        </tr>
+        <tr>
+            <td>Cafe ban chon</td>
+            <td id="cf">CCCC</td>
+        </tr>
+    </table>
+    <script>
+        //lay du lieu da luu lay ra info.html
+        var gt1, gt2;
+        gt1 = localStorage.getItem("us");
+        gt2 = localStorage.getItem("mk");
+        gt3 = localStorage.getItem("cf");
+        gt4 = localStorage.getItem("gt");
+
+        //xuat vao id da co
+        document.getElementById("us").innerHTML = gt1;
+        document.getElementById("pw").innerHTML = gt2;
+        document.getElementById("cf").innerHTML = gt3;
+        document.getElementById("gen").innerHTML = gt4;
+    </script>
+</body>
+
+</html>
